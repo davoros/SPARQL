@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:bbc-pont="http://purl.org/ontology/po/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:bmo="http://collection.britishmuseum.org/id/ontology/"
+	xmlns:creativecommons="http://creativecommons.org/ns#"
+	xmlns:crm="http://erlangen-crm.org/current/"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:dbp-ont="http://dbpedia.org/ontology/"
+	xmlns:dbp-prop="http://dbpedia.org/property/"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:dbtune="http://dbtune.org/bbc/peel/work/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dc-term="http://purl.org/dc/terms/"
+	xmlns:dimension="http://qudt.org/schema/dimension#"
+	xmlns:dimension-1.1="http://qudt.org/1.1/schema/dimension#"
+	xmlns:dtype="http://www.linkedmodel.org/schema/dtype#"
+	xmlns:dtype-1.0="http://www.linkedmodel.org/1.0/schema/dtype#"
+	xmlns:factbook="http://www.daml.org/2001/12/factbook/factbook-ont#"
+	xmlns:fb="http://rdf.freebase.com/ns/"
+	xmlns:ff="http://factforge.net/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:generations="http://www.owl-ontologies.com/generations.owl#"
+	xmlns:geo-ont="http://www.geonames.org/ontology#"
+	xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:geonames="http://sws.geonames.org/"
+	xmlns:gr="http://purl.org/goodrelations/v1#"
+	xmlns:id="http://collection.britishmuseum.org/id/"
+	xmlns:idThes="http://collection.britishmuseum.org/id/thesauri/"
+	xmlns:lingvoj="http://www.lingvoj.org/ontology#"
+	xmlns:music-ont="http://purl.org/ontology/mo/"
+	xmlns:nytimes="http://data.nytimes.com/"
+	xmlns:oasis="http://psi.oasis-open.org/iso/639/#"
+	xmlns:om="http://www.ontotext.com/owlim/"
+	xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:opencyc-en="http://sw.opencyc.org/2008/06/10/concept/en/"
+	xmlns:ot="http://www.ontotext.com/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:pext="http://proton.semanticweb.org/protonext#"
+	xmlns:pkm="http://proton.semanticweb.org/protonkm#"
+	xmlns:psys="http://proton.semanticweb.org/protonsys#"
+	xmlns:ptop="http://www.ontotext.com/proton/protontop#"
+	xmlns:quantity="http://qudt.org/schema/quantity#"
+	xmlns:quantity-1.1="http://qudt.org/1.1/schema/quantity#"
+	xmlns:qudt="http://qudt.org/schema/qudt#"
+	xmlns:qudt-1.1="http://qudt.org/1.1/schema/qudt#"
+	xmlns:qudt-dimension="http://qudt.org/vocab/dimension#"
+	xmlns:qudt-dimension-1.1="http://qudt.org/1.1/vocab/dimension#"
+	xmlns:qudt-dimensionalunit-1.1="http://qudt.org/1.1/vocab/dimensionalunit#"
+	xmlns:qudt-quantity="http://qudt.org/vocab/quantity#"
+	xmlns:qudt-quantity-1.1="http://qudt.org/1.1/vocab/quantity#"
+	xmlns:qudt-unit="http://qudt.org/vocab/unit#"
+	xmlns:qudt-unit-1.1="http://qudt.org/1.1/vocab/unit#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rso="http://www.researchspace.org/ontology/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:sw-vocab="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+	xmlns:thesDimension="http://collection.britishmuseum.org/id/thesauri/dimension/"
+	xmlns:thesUnit="http://collection.britishmuseum.org/id/thesauri/unit/"
+	xmlns:ub="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#"
+	xmlns:umbel="http://umbel.org/umbel#"
+	xmlns:umbel-ac="http://umbel.org/umbel/ac/"
+	xmlns:umbel-en="http://umbel.org/umbel/ne/wikipedia/"
+	xmlns:umbel-sc="http://umbel.org/umbel/sc/"
+	xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+	xmlns:vaem-1.2="http://www.linkedmodel.org/1.2/schema/vaem#"
+	xmlns:voag="http://voag.linkedmodel.org/schema/voag#"
+	xmlns:voag-1.0="http://voag.linkedmodel.org/1.0/schema/voag#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:wordn-sc="http://www.w3.org/2006/03/wn/wn20/schema/"
+	xmlns:wordnet="http://www.w3.org/2006/03/wn/wn20/instances/"
+	xmlns:wordnet16="http://xmlns.com/wordnet/1.6/"
+	xmlns:wot="http://xmlns.com/wot/0.1/"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:yago="http://mpii.de/yago/resource/">
+<crm:E22_Man-Made_Object rdf:about="http://collection.britishmuseum.org/id/object/MCT1524">
+	<crm:P45_consists_of rdf:resource="http://collection.britishmuseum.org/id/thesauri/x10892"/>
+	<crm:P45_consists_of rdf:resource="http://collection.britishmuseum.org/id/thesauri/x11505"/>
+	<crm:P51_has_former_or_current_owner rdf:resource="http://collection.britishmuseum.org/id/person-institution/81655"/>
+	<bmo:PX_has_main_representation rdf:resource="http://www.britishmuseum.org/collectionimages/AN00248/AN00248833_001_l.jpg"/>
+	<crm:P52_has_current_owner rdf:resource="http://collection.britishmuseum.org/id/the-british-museum"/>
+	<crm:P138i_has_representation rdf:resource="http://www.britishmuseum.org/collectionimages/AN00248/AN00248834_001_l.jpg"/>
+	<crm:P128_carries rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/concept/1"/>
+	<crm:P128_carries rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/concept/2"/>
+	<crm:P128_carries rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/concept/3"/>
+	<crm:P128_carries rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/concept/4"/>
+	<crm:P70i_is_documented_in rdf:resource="http://collection.britishmuseum.org/id/bibliography/9556"/>
+	<crm:P70i_is_documented_in rdf:resource="http://collection.britishmuseum.org/id/bibliography/7894"/>
+	<crm:P50_has_current_keeper rdf:resource="http://collection.britishmuseum.org/id/the-british-museum"/>
+	<crm:P50_has_current_keeper rdf:resource="http://collection.britishmuseum.org/id/thesauri/department/H"/>
+	<crm:P30i_custody_transferred_through rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/acquisition"/>
+	<crm:P1_is_identified_by rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/codexid"/>
+	<crm:P1_is_identified_by rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/regno"/>
+	<crm:P24i_changed_ownership_through rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/acquisition"/>
+	<crm:P49_has_former_or_current_keeper rdf:resource="http://collection.britishmuseum.org/id/person-institution/81655"/>
+	<bmo:PX_object_type rdf:resource="http://collection.britishmuseum.org/id/thesauri/x5597"/>
+	<bmo:PX_condition>Chip to inside of rim; painting in bottom worn [Jan 2009].</bmo:PX_condition>
+	<bmo:PX_curatorial_comment>The number 982 refers to the 'plumpers' votes cast in the election of Sir William Meredith for Liverpool in 1761. Plumpers were voters who cast only one of the two votes to which they were entitled, thus giving Meredith 982 of his total of 1,138  and avoiding helping his opponents.
+For a mug inscribed 'Success to Sir William's Plumpers 982' see reg. no. 1959,4-2,1.
+
+A salt-glazed 'scratch-blue' mug inscribed 'Ser William a Plumper' was destroyed in the Liverpool Museum during the Second World War (1941): a photograph survives and this is reproduced on p.18 of the Leeds Arts Calendar, No.82 (1978) in Alan Smith's aricle on pp.14-19 'An Enamelled, Tin-glazed Mug at Temple Newsam House'.
+
+
+
+Another bowl with the same inscription but different decoration on the outer surface is illustrated by Hillis 2011, p. 152, ill. 5.15.</bmo:PX_curatorial_comment>
+	<bmo:PX_display_wrap>Consists of :: gold ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Uses technique :: painted ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Uses technique :: glazed ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Uses technique :: gilded ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Object type :: bowl ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Uses technique :: moulded ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Dimension Height :: 11.70cm ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Dimension Diameter :: 26.00cm ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Acquisition date :: 1981 ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Subject :: bird ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Consists of :: porcelain ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Subject :: landscape ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Subject :: leaf ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Acquisition (From) :: Woodward, Constance to The British Museum ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Production date :: 1761 ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>School of :: Oriental style ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Production :: Factory in Liverpool ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Production :: Factory of Richard Chaffers &amp; Co ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Associated Event :: Election of 1761 ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Bibliograpic reference :: Hillis 2011 p. 152, ills. 5.13A, 5.14 ::</bmo:PX_display_wrap>
+	<bmo:PX_display_wrap>Bibliograpic reference :: Watney 1997 p.9 ::</bmo:PX_display_wrap>
+	<bmo:PX_physical_description>Bowl; porcelain; deep foot; decorated on inner and outer surfaces with oriental landscape scenes in under-glaze blue and orange, gilt; two flying birds painted in orange on outside; band of decoration round inside of rim with lattice-work patterns alternating with rocks and leaves; number on scroll painted in black in base of bowl.</bmo:PX_physical_description>
+	<crm:P108i_was_produced_by rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/production"/>
+	<crm:P43_has_dimension rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/diameter/1"/>
+	<crm:P43_has_dimension rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/height/1"/>
+	<crm:P48_has_preferred_identifier rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/prn"/>
+	<crm:P65_shows_visual_item rdf:resource="http://collection.britishmuseum.org/id/object/MCT1524/inscription/1"/>
+</crm:E22_Man-Made_Object>
+
+</rdf:RDF>

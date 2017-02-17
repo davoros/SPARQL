@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <crm:E7_Activity rdf:about="http://hellespont.dainst.org/event/49"
+        rdfs:label="Battle of Koroneia">
+        <crm:P2_has_type>
+            <crm:E55_Type rdf:about="http://hellespont.dainst.org/type/manual_annotation"
+                rdfs:label="manual annotation">
+                <rdf:value xml:lang="en">manual annotation</rdf:value>
+                <crm:P2_has_type>
+                    <crm:E55_Type rdf:about="http://hellespont.dainst.org/type/event_type"
+                        rdfs:label="event type">
+                        <rdf:value xml:lang="en">event type</rdf:value>
+                    </crm:E55_Type>
+                </crm:P2_has_type>
+                <crm:P3_has_note xml:lang="en"
+                    rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historical
+                    literature</crm:P3_has_note>
+            </crm:E55_Type>
+        </crm:P2_has_type>
+        <crm:P1_is_identified_by>
+            <crm:E41_Appellation>
+                <rdf:value>Battle of Koroneia</rdf:value>
+            </crm:E41_Appellation>
+        </crm:P1_is_identified_by>
+        <crm:P3_has_note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Hornblower</crm:P3_has_note>
+        <crm:P9i_forms_part_of>
+            <crm:E7_Activity rdf:about="http://hellespont.dainst.org/event/48"
+                rdfs:label="Battle of Koroneia: Athenian loss of Boiotia">
+                <crm:P1_is_identified_by>
+                    <crm:E41_Appellation>
+                        <rdf:value>Battle of Koroneia: Athenian loss of Boiotia</rdf:value>
+                    </crm:E41_Appellation>
+                </crm:P1_is_identified_by>
+            </crm:E7_Activity>
+        </crm:P9i_forms_part_of>
+        <crm:P9i_forms_part_of>
+            <crm:E7_Activity rdf:about="http://hellespont.dainst.org/event/9"
+                rdfs:label="Narrative of events to the end of the Samian Revolt">
+                <crm:P1_is_identified_by>
+                    <crm:E41_Appellation>
+                        <rdf:value>Narrative of events to the end of the Samian Revolt</rdf:value>
+                    </crm:E41_Appellation>
+                </crm:P1_is_identified_by>
+            </crm:E7_Activity>
+        </crm:P9i_forms_part_of>
+        <crm:P9i_forms_part_of>
+            <crm:E7_Activity rdf:about="http://hellespont.dainst.org/event/32"
+                rdfs:label="First Peloponnesian War">
+                <crm:P1_is_identified_by>
+                    <crm:E41_Appellation>
+                        <rdf:value>First Peloponnesian War</rdf:value>
+                    </crm:E41_Appellation>
+                </crm:P1_is_identified_by>
+            </crm:E7_Activity>
+        </crm:P9i_forms_part_of>
+        <crm:P9i_forms_part_of>
+            <crm:E5_Event rdf:about="http://hellespont.dainst.org/event/58"
+                rdfs:label="The Pentekontaetia or &apos;Fifty Years&apos;">
+                <crm:P1_is_identified_by>
+                    <crm:E41_Appellation>
+                        <rdf:value>The Pentekontaetia or 'Fifty Years'</rdf:value>
+                    </crm:E41_Appellation>
+                </crm:P1_is_identified_by>
+            </crm:E5_Event>
+        </crm:P9i_forms_part_of>
+        <crm:P10_falls_within>
+            <crm:E4_Period>
+                <crm:P4_has_time-span>
+                    <crm:E52_Time-Span>
+                        <crm:P78_is_identified_by>
+                            <crm:E50_Date>
+                                <rdf:value xml:lang="en">446 BC</rdf:value>
+                                <crm:P139_has_alternative_form>
+                                    <crm:E50_Date>
+                                        <rdf:value
+                                            rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+                                            >-0445</rdf:value>
+                                    </crm:E50_Date>
+                                </crm:P139_has_alternative_form>
+                            </crm:E50_Date>
+                        </crm:P78_is_identified_by>
+                    </crm:E52_Time-Span>
+                </crm:P4_has_time-span>
+                <crm:P140i_was_attributed_by>
+                    <crm:E13_Attribute_Assignment
+                        rdf:about="http://hellespont.dainst.org/attribute_assignment/44">
+                        <crm:P70i_is_documented_in>
+                            <crm:E31_Document rdf:about="http://hellespont.dainst.org/document/101"
+                                rdfs:label="Hornblower, S. 1991. A Commentary on Thucydides. Oxford: Oxford University Press, p. 183">
+                                <crm:P106i_forms_part_of
+                                    rdf:resource="http://hellespont.dainst.org/book/1"/>
+                            </crm:E31_Document>
+                        </crm:P70i_is_documented_in>
+                    </crm:E13_Attribute_Assignment>
+                </crm:P140i_was_attributed_by>
+            </crm:E4_Period>
+        </crm:P10_falls_within>
+        <crm:P141i_was_assigned_by
+            rdf:resource="http://hellespont.dainst.org/attribute_assignment/44"/>
+        <crm:P11_had_participant>
+            <crm:E74_Group rdf:about="http://hellespont.dainst.org/actor/159">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en">Delian League</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P67i_is_referred_to_by
+                    rdf:resource="http://arachne.uni-koeln.de/entity/2793687"/>
+            </crm:E74_Group>
+        </crm:P11_had_participant>
+        <crm:P11_had_participant>
+            <crm:E74_Group rdf:about="http://hellespont.dainst.org/actor/47">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en">Euboians</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="grc"
+                            >&#x395;&#x1f50;&#x3b2;&#x3bf;&#x3b5;&#x3cd;&#x3c2;</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P74_has_current_or_former_residence
+                    rdf:resource="http://arachne.uni-koeln.de/entity/1579"/>
+            </crm:E74_Group>
+        </crm:P11_had_participant>
+        <crm:P11_had_participant>
+            <crm:E74_Group rdf:about="http://hellespont.dainst.org/actor/51">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en">Athenians</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="grc"
+                            >&#x1f08;&#x3b8;&#x3b7;&#x3bd;&#x3b1;&#x1fd6;&#x3bf;&#x3c2;</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P74_has_current_or_former_residence
+                    rdf:resource="http://arachne.uni-koeln.de/entity/770"/>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/39">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Tlepolemus</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x3a4;&#x3bb;&#x3b7;&#x3c0;&#x3cc;&#x3bb;&#x3b5;&#x3bc;&#x3bf;&#x3c2;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/186">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Ion</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/19">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Hagnon</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x1f0d;&#x3b3;&#x3bd;&#x3c9;&#x3bd;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/20">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Pericles</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x3a0;&#x3b5;&#x3c1;&#x3b9;&#x3ba;&#x3bb;&#x1fc6;&#x3c2;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/13">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Themistokles</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x398;&#x3b5;&#x3bc;&#x3b9;&#x3c3;&#x3c4;&#x3bf;&#x3ba;&#x3bb;&#x1fc6;&#x3c2;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/36">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Thucydides</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x398;&#x3bf;&#x3c5;&#x3ba;&#x3c5;&#x3b4;&#x3af;&#x3b4;&#x3b7;&#x3c2;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/87">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Anticles</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x1f08;&#x3bd;&#x3c4;&#x3b9;&#x3ba;&#x3bb;&#x1fc6;&#x3c2;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/187">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Sophocles</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+                <crm:P107_has_current_or_former_member>
+                    <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/67">
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="en">Phormio</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                        <crm:P131_is_identified_by>
+                            <crm:E82_Actor_Appellation>
+                                <rdf:value xml:lang="grc"
+                                    >&#x3a6;&#x3bf;&#x3c1;&#x3bc;&#x3af;&#x3c9;&#x3bd;</rdf:value>
+                            </crm:E82_Actor_Appellation>
+                        </crm:P131_is_identified_by>
+                    </crm:E21_Person>
+                </crm:P107_has_current_or_former_member>
+            </crm:E74_Group>
+        </crm:P11_had_participant>
+        <crm:P11_had_participant>
+            <crm:E21_Person rdf:about="http://hellespont.dainst.org/actor/16">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en">Tolmides</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="grc"
+                            >&#x3a4;&#x3bf;&#x3bb;&#x3bc;&#x3af;&#x3b4;&#x3b7;&#x3c2;</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <owl:sameAs rdf:resource="http://arachne.uni-koeln.de/entity/1409020"/>
+            </crm:E21_Person>
+        </crm:P11_had_participant>
+        <crm:P11_had_participant>
+            <crm:E74_Group rdf:about="http://hellespont.dainst.org/actor/26">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en"> Locrians</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="grc"
+                            >&#x39b;&#x3bf;&#x3ba;&#x3c1;&#x3cc;&#x3c2;</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P74_has_current_or_former_residence
+                    rdf:resource="http://arachne.uni-koeln.de/entity/2172775"/>
+            </crm:E74_Group>
+        </crm:P11_had_participant>
+        <crm:P11_had_participant>
+            <crm:E74_Group rdf:about="http://hellespont.dainst.org/actor/82">
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="en">Boiotians</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P131_is_identified_by>
+                    <crm:E82_Actor_Appellation>
+                        <rdf:value xml:lang="grc"
+                            >&#x392;&#x3bf;&#x3b9;&#x3c9;&#x3c4;&#x3cc;&#x3c2;</rdf:value>
+                    </crm:E82_Actor_Appellation>
+                </crm:P131_is_identified_by>
+                <crm:P74_has_current_or_former_residence
+                    rdf:resource="http://arachne.uni-koeln.de/entity/2224"/>
+            </crm:E74_Group>
+        </crm:P11_had_participant>
+        <crm:P70i_is_documented_in>
+            <crm:E31_Document rdf:about="http://hellespont.dainst.org/document/51"
+                rdfs:label="Hornblower, S. 1991. A Commentary on Thucydides. Oxford: Oxford University Press, p. 184">
+                <crm:P106i_forms_part_of rdf:resource="http://hellespont.dainst.org/book/1"/>
+            </crm:E31_Document>
+        </crm:P70i_is_documented_in>
+        <crm:P67i_is_referred_to_by>
+            <crm:E33_Linguistic_Object
+                rdf:about="http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:1.113.2">
+                <rdf:value xml:lang="grc"/>
+            </crm:E33_Linguistic_Object>
+        </crm:P67i_is_referred_to_by>
+        <crm:P7_took_place_at>
+            <crm:E53_Place rdf:about="http://arachne.uni-koeln.de/entity/2169387">
+                <crm:P87_is_identified_by>
+                    <crm:E44_Place_Appellation>
+                        <rdf:value xml:lang="en">Koroneia</rdf:value>
+                    </crm:E44_Place_Appellation>
+                </crm:P87_is_identified_by>
+            </crm:E53_Place>
+        </crm:P7_took_place_at>
+    </crm:E7_Activity>
+</rdf:RDF>

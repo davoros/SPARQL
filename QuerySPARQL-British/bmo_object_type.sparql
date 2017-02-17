@@ -1,0 +1,9 @@
+PREFIX crm: <http://erlangen-crm.org/current/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX bmo: <http://collection.britishmuseum.org/id/ontology/>
+
+SELECT ?object WHERE 
+
+{
+    ?object bmo:PX_object_type <http://collection.britishmuseum.org/id/thesauri/x5597>
+} 
