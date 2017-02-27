@@ -1,0 +1,14 @@
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/>
+
+
+
+SELECT ?object ?value WHERE{
+      
+            ?object rdf:value ?value 
+              
+            FILTER( ?value = "The Piraeus Walls").
+                                    
+                                      
+}
