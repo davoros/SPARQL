@@ -1,5 +1,0 @@
-PREFIX crm: <http://erlangen-crm.org/current/>
-PREFIX fts: <http://www.ontotext.com/owlim/fts#>
-
-SELECT ?obj
-where { ?obj rdfs:label "Hoa Hakananai'a" }

@@ -1,8 +1,0 @@
-PREFIX crm: <http://erlangen-crm.org/current/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-SELECT ?object WHERE 
-
-{
-    ?object crm:P52_has_current_owner <http://collection.britishmuseum.org/id/the-british-museum>
-} 
