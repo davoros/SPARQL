@@ -1,0 +1,468 @@
+
+# Return all the objects filtered by the value "clarin.eu:cr1:p_1271859438164"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?object ?value WHERE{
+
+              ?object rdfs:label ?value .
+
+              FILTER( ?value = "clarin.eu:cr1:p_1271859438164").}
+
+
+# Return all the objects filtered by the label "cmdi-profile"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+              SELECT ?o ?label WHERE {
+
+              ?o rdfs:label ?label .
+
+              filter(?label="cmdi-profile")
+
+              }
+
+
+# Return all the entities "D14_Software"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+              SELECT ?subject  WHERE{
+
+                          ?subject rdf:type <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/D14_Software>
+
+                          }
+
+
+# Return all the  objects with labelled title
+
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+      SELECT ?o  WHERE {
+
+        {?o crm:P1_is_identified_by ?title .
+
+          ?title rdfs:label ?label }
+
+
+
+
+      }
+
+
+# Return all the subject with "title" and "appellation"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+      SELECT DISTINCT ?s  WHERE {
+
+              {?s rdf:type <http://www.cidoc-crm.org/cidoc-crm/E35_Title> }
+
+              UNION {?s rdf:type <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> }
+
+
+
+}
+
+
+#Query 6: Return
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT ?s WHERE {
+
+          {?s rdf:type <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>}
+
+          UNION {?s  crm:P4_has_time-span ?value }
+
+           }
+
+
+
+#Query 7: Return all the
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+      SELECT * WHERE {
+
+            ?event crm:P4_has_time-span <http://parthenos-project.eu/publication/2014> .
+
+            ?name crm:P1_is_identified_by <http://parthenos-project.eu/collectionName/CHN> .
+
+                }
+
+
+# Return all the dataset labelled as "collection"
+
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+            SELECT * WHERE {
+
+                  ?dataset crm:P2_has_type ?type .
+
+                  ?type rdfs:label "collection" .
+
+                    }
+
+
+
+# Return S/O/P which contains "cmdi-profile" in its subject
+
+
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+            SELECT ?s ?p ?o
+
+            WHERE
+
+            { ?s ?p ?o .FILTER regex(str(?s), "cmdi-profile") .}
+
+
+
+# Return S/O/P which contains "INL" in its subject
+
+
+  PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+  PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+  PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX ecrm: <http://erlangen-crm.org/current/>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+              SELECT ?s ?p ?o
+
+              WHERE
+
+              { ?s ?p ?o .FILTER regex(str(?s), "INL") .}
+
+
+# Return S/O/P which contains "INL" in its object
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+  SELECT ?s ?p ?o
+
+    WHERE
+
+        { ?s ?p ?o .FILTER regex(str(?o), "collection") .}
+
+# Return the frequency of predicates ordered by descending order
+
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT ?predicate (COUNT(*)AS ?frequency)
+
+WHERE {?subject ?predicate ?object}
+
+GROUP BY ?predicate
+
+ORDER BY DESC(?frequency)
+
+
+
+
+# Return all the sub-classes (Inferred) from E7
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT ?s
+
+WHERE { ?s rdf:type ?type .
+
+
+       	?type rdfs:subclassOf* <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+
+
+      }
+
+
+
+# Return all the classes with instances ordered by class
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?class
+
+WHERE {
+
+  		?instance a ?class . }
+
+ORDER BY ?class
+
+
+
+
+
+# Return all the events where the subject is identified by "CHN"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?event
+
+WHERE {
+
+    ?event crm:P14_carried_out_by ?s
+
+      {SELECT  ?s
+
+              WHERE {?s crm:P1_is_identified_by <http://parthenos-project.eu/projectName/CHN> }
+
+
+            }
+
+
+  }
+
+
+# Return all the events carried out by E39_Actor
+
+
+  PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+  PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+  PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX ecrm: <http://erlangen-crm.org/current/>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+  SELECT DISTINCT ?event
+
+  WHERE {
+
+      ?event crm:P14_carried_out_by ?s
+
+        {SELECT  ?s
+
+                WHERE {?s rdf:type <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> }
+
+
+              }
+
+
+# Return all the PE24_Volatile_Dataset identified by "CHN"
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?s
+
+WHERE {
+
+  		?s rdf:type <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/PE24_Volatile_Dataset>
+
+        {SELECT  ?s
+
+                WHERE {?s crm:P1_is_identified_by <http://parthenos-project.eu/collectionName/CHN> }
+
+
+        			}
+
+
+		}
+
+
+
+
+
+
+#Query23
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?s ?o
+
+WHERE {
+
+    <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/PE24_Volatile_Dataset> ?s ?o
+
+
+
+
+  }
+
+
+# Return
+
+  PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+      PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+      PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+      PREFIX ecrm: <http://erlangen-crm.org/current/>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+      SELECT DISTINCT ?type  where {
+
+      ?s crm:P1_is_identified_by ?o.
+
+      ?s a ?type.
+}
+
+ORDER BY ?type
+
+# Return the domain and range of the subject that carries the activity
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT ?s ?domain ?range
+
+WHERE { ?s rdf:type ?type .
+
+
+       	?type rdfs:subclassOf* <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+
+         crm:P14_carried_out_by rdfs:domain ?domain ;
+                                rdfs:range  ?range .
+
+
+
+      }
+
+
+#Return Subclasses and Superclasses
+
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT distinct ?super ?sub
+
+      WHERE {?sub rdfs:subClassOf ?super }
+
+
+#Return all the uesd types and how often they are used.
+
+PREFIX crmpe: <http://www.ics.forth.gr/isl/CRMext/CRMpe.rdfs/>
+PREFIX crmdig: <http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+      SELECT ?type (COUNT(?type) as ?typeCount)
+      WHERE {[] a ?type}
+      GROUP BY ?type
